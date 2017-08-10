@@ -22,8 +22,11 @@ This has installed MCR. We will refer to the it when we run mixmapper.
 ## Install mixmapper
 Mixmapper now needs to be install. The mixmapper MCR will be used to run the final step and does not need installation.
 
-`tar -xzf MixMapper_v2.0.tar.gz`
-`cd MixMapper_v2.0/`
-`g++ -O2 compute_moment_stats.cpp -o compute_moment_stats`
-`g++ -O2 compute_most_additive_trees.cpp -o compute_most_additive_trees`
+`tar -xzf MixMapper_v2.0.tar.gz
+
+cd MixMapper_v2.0/
+
+g++ -O2 compute_moment_stats.cpp -o compute_moment_stats
+
+g++ -O2 compute_most_additive_trees.cpp -o compute_most_additive_trees`
 
