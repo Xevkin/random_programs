@@ -8,8 +8,10 @@ wget www.mathworks.com/supportfiles/MCR_Runtime/R2012a/MCR_R2012a_glnxa64_instal
 
 uncomment lines of installer_input.txt:
 destinationFolder=[INSTALL_PATH eg first mkdir /usr/local/MCR; then set destinationFolder=/usr/local/MCR]
-\nagreeToLicense=yes
-\nmode=silent
+
+agreeToLicense=yes
+
+mode=silent
  
 ./install -inputFile installer_input.txt
 
