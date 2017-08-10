@@ -2,6 +2,8 @@ http://cb.csail.mit.edu/cb/mixmapper/
 
 Download both mixmapper and the mixmapper MCR distribution (we use this as we don't have Mathlab).
 
+"Download MATLAB Composite Runtime"
+
 As per  the readme in the MCR distribution:
 
 `wget www.mathworks.com/supportfiles/MCR_Runtime/R2012a/MCR_R2012a_glnxa64_installer.zip`
@@ -16,5 +18,5 @@ mode=silent
  
 `./install -inputFile installer_input.txt`
 
-
+This has installed MCR. We will refer to the it when we run mixmapper.
 
