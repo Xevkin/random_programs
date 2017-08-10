@@ -74,6 +74,12 @@ You can also fit pops as admixtures between an admixed pop and a third pop:
 
 This would fit BRNZ_TURK as a mixture of two scaffold pops, then MOROCCN_MOD as mixture of BRNZ_TURK and a third scaffold pop.
 
+You can also test if a two way admixture or three way admixture of a particular pop fits best by putting the following line before a three way fit e.g.
+
+`options.test_2v3 = 1;`
+
+`[trees,fits] = MixMapper(pop_data_reps(1:20),scaffold_pop_names,'BRNZ_TURK','MOROCCN_MOD',options);`
+
 Now run MixMapper:
 
 `<path to MixMapper MCR folder>/run_MixMapper_wrapper.sh <MATLAB MCR path>/v717/ <path to MixMapper MCR folder>/cmd.txt > out.txt`
