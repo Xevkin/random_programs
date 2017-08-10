@@ -74,7 +74,7 @@ You can also fit pops as admixtures between an admixed pop and a third pop:
 
 This would fit BRNZ_TURK as a mixture of two scaffold pops, then MOROCCN_MOD as mixture of BRNZ_TURK and a third scaffold pop.
 
-(NOTE haven't figured out how to do this yet....) You can also test if a two way admixture or three way admixture of a particular pop fits best by putting the following line before a three way fit e.g.
+(NOTE haven't figured out how to do this yet....think you have to have proper MATLAB) You can also test if a two way admixture or three way admixture of a particular pop fits best by putting the following line before a three way fit e.g.
 
 `options.test_2v3 = 1;`
 
