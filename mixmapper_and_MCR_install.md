@@ -2,7 +2,7 @@ http://cb.csail.mit.edu/cb/mixmapper/
 
 Download both mixmapper and the mixmapper MCR distribution (we use this as we don't have Mathlab).
 
-"Download MATLAB Composite Runtime"
+##Download MATLAB Composite Runtime
 
 As per  the readme in the MCR distribution:
 
