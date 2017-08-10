@@ -60,15 +60,17 @@ This defines the input data. "Dataset" refers to what you used for $i above.
 
 This defines what scaffold you end up using for this run.
 
-`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','',options);`
+Delete the % in front of matlabpool open 4 to run bootstrap replicates in parallel.
+
+`[trees,fits] = MixMapper(pop_data_reps(1:24),scaffold_pop_names,'BRNZ_TURK','',options);`
 
 We define some of fitting we want to do. The above line will fit BRNZ_TURK as the product of admixture between two scaffold pops.
 
-pop_data_reps(1:4) defines the number of bootstrap replicates.
+pop_data_reps(1:24) defines the number of bootstrap replicates.
 
 You can also fit pops as admixtures between an admixed pop and a third pop:
 
-`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','MOROCCN_MOD',options);`
+`[trees,fits] = MixMapper(pop_data_reps(1:24),scaffold_pop_names,'BRNZ_TURK','MOROCCN_MOD',options);`
 
 This would fit BRNZ_TURK as a mixture of two scaffold pops, then MOROCCN_MOD as mixture of BRNZ_TURK and a third scaffold pop.
 
