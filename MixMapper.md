@@ -78,7 +78,10 @@ Now run MixMapper:
 
 `grep -v "In\|running\|in\|trees\|class\|option\|matl\|scaff" out.txt`
 
-The output file will describe the results of fittings. Not 100% about this but the output should be:
+## MixMapper output
+The output file will describe the results of fittings. A tree file of the scaffold will also be created which you can visualize using seaview. 
+
+Not 100% about this but the output should be:
 
 #: Number of replicates supporting admixture event.
 
@@ -90,7 +93,7 @@ Branch1Loc: think this is where along Branch1 admixture occurs (see tree of scaf
 
 MixedDrift: amount of drift in admixed pop following admixture.
 
-A tree file of the scaffold will also be created which you can visualize using seaview.
+
 
 
 
