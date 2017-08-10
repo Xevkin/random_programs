@@ -50,11 +50,21 @@ They recommend you try a few different scaffolds, to see if results are sensitiv
 
 ## run MixMapper using MixMapper MCR distribution
 
-We edit the <MixMapper MCR folder path>/cmd.txt to define input files and analyses.
+We edit the <MixMapper MCR folder path>/cmd.txt to define input files and analyses. Modify the following lines to something similar:
+
+`pop_data_reps = read_MixMapper_input('/home/kdaly/mixmapper/high-coverage');`
+
+`scaffold_pop_names = {'EPI_TURK' 'NEO_IRAN' 'NEO_SERB'};`
+
+`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','',options);`
+
+`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'MOROCCN_MOD','',options);`
+
+
 
 `<path to MixMapper MCR folder>/run_MixMapper_wrapper.sh <MATLAB MCR path>/v717/ <path to MixMapper MCR folder>/cmd.txt > out.txt`
 
-grep -v "In\|running\|in\|trees" out.txt
+`grep -v "In\|running\|in\|trees" out.txt`
 
 
 
