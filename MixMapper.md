@@ -52,13 +52,23 @@ They recommend you try a few different scaffolds, to see if results are sensitiv
 
 We edit the <MixMapper MCR folder path>/cmd.txt to define input files and analyses. Modify the following lines to something similar:
 
-`pop_data_reps = read_MixMapper_input('/home/kdaly/mixmapper/high-coverage');`
+`pop_data_reps = read_MixMapper_input('/home/kdaly/mixmapper/dataset');`
+
+This defines the input data. "Dataset" refers to what you used for $i above.
 
 `scaffold_pop_names = {'EPI_TURK' 'NEO_IRAN' 'NEO_SERB'};`
 
+This defines what scaffold you end up using for this run.
+
 `[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','',options);`
 
-`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'MOROCCN_MOD','',options);`
+We define some of fitting we want to do. The above lines will fit BRNZ_TURK as the product of admixture between two scaffold pops.
+
+pop_data_reps(1:4) defines the number of bootstrap replicates.
+
+You can also fit pops as admixtures between an admixed pop and a third pop:
+
+`[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','MOROCCN_MOD',options);`
 
 
 
