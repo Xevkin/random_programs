@@ -70,6 +70,8 @@ You can also fit pops as admixtures between an admixed pop and a third pop:
 
 `[trees,fits] = MixMapper(pop_data_reps(1:4),scaffold_pop_names,'BRNZ_TURK','MOROCCN_MOD',options);`
 
+This would fit BRNZ_TURK as a mixture of two scaffold pops, then MOROCCN_MOD as mixture of BRNZ_TURK and a third scaffold pop.
+
 Now run MixMapper:
 
 `<path to MixMapper MCR folder>/run_MixMapper_wrapper.sh <MATLAB MCR path>/v717/ <path to MixMapper MCR folder>/cmd.txt > out.txt`
@@ -79,9 +81,13 @@ Now run MixMapper:
 The output file will describe the results of fittings. Not 100% about this but the output should be:
 
 #: Number of replicates supporting admixture event.
+
 Resnorm: residual error (smaller = better).
+
 alpha: mixing proportion of Branch1 pop.
+
 Branch1Loc: think this is where along Branch1 admixture occurs (see tree of scaffold in seaview).
+
 MixedDrift: amount of drift in admixed pop following admixture.
 
 A tree file of the scaffold will also be created which you can visualize using seaview.
