@@ -1,6 +1,6 @@
 http://cb.csail.mit.edu/cb/mixmapper/
 
-Download both mixmapper and the mixmapper MCR distribution (we use this as we don't have MATLAB).
+Download both MixMapper and the MixMapper MCR distribution (we use this as we don't have MATLAB).
 
 ## Download and install MATLAB Composite Runtime
 As per  the readme in the MCR distribution:
@@ -19,8 +19,8 @@ mode=silent
 
 This has installed MCR. We will refer to the it when we run mixmapper.
 
-## Install mixmapper
-Mixmapper now needs to be install. The mixmapper MCR will be used to run the final step and does not need installation.
+## Install MixMapper
+MixMapper now needs to be installed. The MixMapper MCR will be used to run the final step and does not need installation.
 
 `tar -xzf MixMapper_v2.0.tar.gz`
 
